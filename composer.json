@@ -1,0 +1,16 @@
+{
+    "name": "luonglit/bugreporter",
+    "description": "Bug reporter to email",
+    "authors": [
+        {
+            "name": "lit",
+            "email": "pvluong0001@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lit\\BugReporter\\": "src/"
+        }
+    }
+}
