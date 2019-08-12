@@ -7,7 +7,9 @@ use Lit\BugReporter\App\Mail\ReportMail;
 
 final class BugReport {
     public function report($exceptionHtml) {
-        $this->__sendExceptionMail($exceptionHtml);
+        if(config('buggerconfig.can_send')) {
+            $this->__sendExceptionMail($exceptionHtml);
+        }
     }
 
     private function __sendExceptionMail($exceptionHtml) {
