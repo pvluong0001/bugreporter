@@ -20,7 +20,7 @@ class BugReporterServiceProvider extends ServiceProvider
             __DIR__ . '/config/bugger.php' => config_path('luonglit/bugger.php')
         ]);
 
-        $this->mergeConfigFrom(__DIR__ . '/config/bugger.php', 'buggerconfig');
+        $this->mergeConfigFrom(__DIR__ . '/config/bugger.php', 'luonglit.bugger');
     }
 
     public function register()

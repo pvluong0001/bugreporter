@@ -30,8 +30,8 @@ class ReportMail extends Mailable
     public function build()
     {
         return $this->view('bugreporter::mail')
-            ->subject(config('buggerconfig.subject'))
-            ->cc(config('buggerconfig.cc'))
+            ->subject(config('luonglit.bugger.subject'))
+            ->cc(config('luonglit.bugger.cc'))
             ->with('content', $this->content);
     }
 }
